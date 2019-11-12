@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Implements an include in the first subelement, so that the 2nd tag
+     should be in the included file. -->
+<famous-people xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="person.xml" />
+</famous-people>

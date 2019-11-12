@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<famous-people xmlns:xi="http://www.w3.org/2001/XInclude">
+  <person>
+    <name>Carl Friedrich Gauss</name>
+    <birthdate>1777-04-30</birthdate>
+  </person>
+  <xi:include href="include/person3.xml" />
+</famous-people>
