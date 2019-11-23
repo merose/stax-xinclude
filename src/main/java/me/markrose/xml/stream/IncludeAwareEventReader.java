@@ -21,6 +21,17 @@ import javax.xml.stream.events.XMLEvent;
  * attribute. The <code>fallback</code> sub-element is not supported.
  * In addition, the include locations are resolved using the {@link URI}
  * class, which may not correctly support all references.
+ * 
+ * <p>To use this event reader to parse XML documents that have
+ * XML inclusions:</p>
+ * 
+ * <pre>
+ *   XMLInputFactory factory = XMLInputFactory.newInstance();
+ *   XMLEventReader eventReader = new XMLEventReader(documentURI, factory);
+ *   ... use normally as if you got the event reader from the factory directly ...
+ *   XMLEvent event = eventReader.nextEvent();
+ *   ...
+ * </pre>
  */
 public class IncludeAwareEventReader implements XMLEventReader {
 
